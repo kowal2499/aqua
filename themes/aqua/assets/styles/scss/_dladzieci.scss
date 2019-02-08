@@ -1,0 +1,33 @@
+#dladzieci {
+
+	min-height: auto;
+
+	.info-box {
+		margin-top: 50px;
+		padding-top: 40px;
+
+		background-image:url('../img/dladzieci.jpg');
+		background-repeat:no-repeat;
+	  background-position: bottom right;
+	  min-height: 300px;
+
+	.bullet {
+		img {
+			height: 20px;
+		}
+		
+		margin-right: 10px;
+		display: inline-block;
+		width: 15%;
+		height: 50px;
+	}
+	.desc {
+		font-size: 15px;
+		display: inline-block;
+		width: 80%;
+		float: right;
+		margin-bottom: 20px;
+	}
+}
+
+}

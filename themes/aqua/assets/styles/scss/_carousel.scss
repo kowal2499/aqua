@@ -1,0 +1,133 @@
+.carousel-page-links {
+  ul {
+    li {
+      display: inline-block;
+      padding: 10px 30px;
+      line-height: 24px;
+      font-size: 18px;
+      border-bottom: 5px solid $cLightGray;
+      &:hover {
+        background-color: $cLighterGray;
+        cursor: pointer;
+      }
+    }
+
+    li.active {
+      border-bottom: 5px solid $cBlue;
+      position: relative;
+      &:after {
+        @include triangleUp(6px, $cBlue);
+      }
+    }
+  }
+}
+
+
+.gallery {
+
+  margin: 5px;
+  
+  .col-md-6, .col-md-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .inner-row {
+    margin: 0;
+  }
+
+  .img-wrapper {
+    margin: 2px;
+    position: relative;
+    display: inline-block;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+    }
+    &:hover .overlay {
+      opacity: 0.8;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  }
+}
+
+#carousel-spots {
+  img {
+    display: block;
+    margin: 20px auto;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.carousel-page-links ul li:hover {
+  background-color: transparent;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+  display: inline-block;
+}
+
+
+.owl-dots {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.owl-dot {
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: $cBlue;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.owl-dot.active {
+    background: $cYellow;
+}
+
+@media screen and (max-width: 425px) {
+  
+  #carousel-spots p {
+    font-size: 16px !important;
+  }
+
+  #links-spots {
+    ul {
+      padding: 0
+    }
+
+    li {
+      font-size: 14px;
+      padding: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}

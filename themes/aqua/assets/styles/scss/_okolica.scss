@@ -1,0 +1,26 @@
+
+
+@media screen and (max-width: 425px) {
+  #okolica {
+    .carousel-page-links {
+    	width: 80%;
+    	margin: 0 auto;
+    }
+	#carousel-spots {
+		img {
+			width: 80%;
+		}
+
+		.description {
+			width: 80%;
+    	margin: 0 auto;
+		}
+
+		h3 {
+			font-size: 20px;
+			font-weight: 300;
+		}
+	}
+
+  }
+}

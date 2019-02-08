@@ -1,0 +1,90 @@
+#cennik {
+	h2 {
+		margin-bottom: 50px;
+	}
+
+	.rule{
+		font-size: 18px;
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	a {
+		border-color: $cBlue;
+		color: $cBlue;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	a:hover {
+			color: $cWhite;
+			background-color: $cBlue;
+		}
+	
+}
+
+
+.p-cell {
+	width: 170px;
+	display: block;
+  background-color: #eee;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+
+  .p-head {
+  	background-color: $cBlue;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding: 10px;
+  	color: $cWhite;
+  	letter-spacing: 3px;
+  	font-size: 21px;
+  	position: relative;
+
+  	&::after {
+				@include triangleBottom(10px, $cBlue);
+				bottom: -10px;
+			}
+  }
+
+  .p-body {
+  	
+  	background-color: $cWhite;
+  	.p-value {
+  		padding: 20px;
+  		position: relative;
+  		left: -15px;
+  		font-size: 40px;
+  		font-weight: bold;
+  	}
+  	.p-currency, .p-pcs {
+  		position: absolute;
+  		font-size: 14px;
+  	}
+
+  	.p-currency {
+  		top: 28px;
+  		right: 13px;
+  	}
+
+  	.p-pcs {
+  		border-top: 1px solid #666;
+  		bottom: 25px;
+  		right: 10px;
+  	}
+	.p-desc {
+		padding: 10px;
+		width: 100%;
+		background-color: $cGrayBck;
+	}
+
+  	
+  }
+
+}

@@ -1,0 +1,90 @@
+.panel-default > .panel-heading {
+    background-color: #23282D;
+    color: #eee;
+    
+}
+
+
+
+.panel-body h4 {
+    color: #337AB7;
+    /*outline: none;*/
+}
+
+.panel-body a:focus {
+	outline: none;
+	border: 0;
+	box-shadow: none;
+}
+
+h4.panel-title {
+    font-size: 18px;
+    color: #eee;
+}
+
+.admin-list {
+	border: 1px solid #eee;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+
+.admin-list .form-control {
+	width: auto;
+}
+
+.admin-list .record {
+	background-color: #f5f5f5;
+	padding: 2px;
+	border-radius: 4px;
+	margin: 3px;
+	display: block;
+}
+
+.admin-list .addNew {
+	background-color: #C2EABA;
+	padding: 3px 20px;
+	border-radius: 4px;
+	display: block;
+}
+
+.admin-list p {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.admin-list label,
+.admin-list input,
+.admin-list textarea,
+.admin-list select {
+	display: inline;
+	height: 34px;
+}
+
+.admin-list textarea {
+	height: auto;
+	margin: 5px;
+}
+
+.admin-list label,
+.admin-list select {
+	padding-left: 10px;
+}
+
+.admin-list input, 
+.admin-list select,
+.admin-list button {
+	margin: 5px 20px 5px 10px;
+}
+
+
+.admin-list button {
+	/*margin-right: 5px;*/
+	/*margin-left: 5px;*/
+	padding: 3px 12px;
+	height: 34px;
+}
+
+.admin-list .record button {
+	margin: 5px;
+}

@@ -1,0 +1,58 @@
+#kontakt {
+
+  button {
+    margin-top: 20px;
+    background-color: $cBlue;
+  }
+
+  i {
+    padding: 0;
+    color: gray;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .form-control {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .input-group-addon {
+    border: none;
+    border-radius: 0px;
+
+    border-top: 1px solid $cGrayBck;
+    border-right: 1px solid $cLightGray;
+    background-color: $cGrayBck;
+  }
+
+  input, textarea {
+    box-shadow: none;
+    background-color: $cGrayBck;
+    border-bottom: 1px solid $cGrayBck !important;
+
+    &:focus {
+      border-bottom: 1px solid $cYellow !important;;
+    }
+
+    &::-webkit-input-placeholder {
+      color: gray;
+    }
+  }
+
+  form {
+      display: inline-block;
+      width: 100%;
+    }
+
+  .sign i {
+    color: $cBlue;
+  }
+
+
+}
+
+

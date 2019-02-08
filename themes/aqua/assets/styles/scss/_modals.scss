@@ -1,0 +1,23 @@
+
+.modal {
+
+	.modal-header {
+		background-color: $cBlue;
+		color: $cWhite;
+	}
+
+	a.btn {
+		border-color: $cBlue;
+		color: $cBlue;
+		margin-top: 10px;
+	}
+
+	a.btn:hover {
+			color: $cWhite;
+			background-color: $cBlue;
+		}
+	
+	li {
+		padding-bottom: 5px;
+	}
+}

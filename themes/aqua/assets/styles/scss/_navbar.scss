@@ -1,0 +1,180 @@
+/* Navigation */
+
+@mixin triangleUp($size: 5px, $color: #fff) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size solid $color;
+}
+
+@mixin triangleBottom($size: 5px, $color: #fff) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+}
+
+@mixin triangleRight($size: 5px, $color: #fff) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+}
+
+@mixin triangleLeft($size: 5px, $color: #fff) {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-right: $size solid $color;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  display: block;
+  background-color: rgba(0,0,0,0.2);
+
+  z-index: 1000;
+  transition: all 0.6s;
+
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.2)), to(rgba(0,0,0,0)));
+}
+
+.navbar {
+  margin-bottom: 0;
+  &.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    border: 0px solid transparent;
+  }
+
+  img {
+    height: 40px;
+  }
+
+  .nav.navbar-nav li.active {
+    border-bottom: 3px solid $cBlue;
+    position: relative;
+    &:after {
+      @include triangleUp(6px, $cBlue);
+    }
+    a {
+      background-color: transparent !important;
+    }
+  }
+
+  .nav.navbar-nav a {
+    transition: all 0.6s;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    color: #f5f5f5;
+    border-bottom: 3px solid transparent;
+    text-transform: uppercase;
+    &:hover {
+      color: #888;
+    }
+
+  }
+
+  .navbar-toggle, .navbar-toggle:focus {
+    background-color: transparent;
+    border-color: $cYellow;
+  }
+
+  // collapsed mode
+  .collapse.in, .collapsing {
+    li {
+      a {
+        text-align: center;
+        color: #333;
+      }
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+
+  }
+
+  .navbar-toggle .icon-bar {
+      background-color: $cYellow;
+    }
+
+  .flags {
+    img {
+      height: 16px;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: auto;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    a {
+      padding-bottom: 10px !important;
+      padding-top: 10px !important;
+    }
+  }
+
+}
+
+.solid {
+  background-color: #fff !important;
+  background-image: none;
+  .nav.navbar-nav a {
+    color: #333 !important;
+  }
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .navbar-brand {
+    padding: 5px;
+  }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .nav.navbar-nav a {
+    font-size: 12px;
+  }
+
+  .navbar-nav>li.lang-item>a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+   
+}

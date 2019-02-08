@@ -1,0 +1,164 @@
+#apartament, #zalety {
+
+	.horiz-center-wrapper {
+    display: table;
+    min-height: 212px;
+	}
+
+	.horiz-center {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+	}
+
+
+	.asset {
+    background-color: $cWhite;
+    padding: 0;
+    border-bottom: 5px solid $cYellow;
+    margin-top: 25px;
+
+    h3 {
+      text-align: center;
+      font-size: 17px;
+      padding: 10px;
+      background-color: #fafafa;
+      margin: 10px auto;
+      text-transform: uppercase;
+      min-height: 55px;
+      margin-bottom: 0;
+    }
+
+    img {
+      height: 60px;
+      display: block;
+      padding: 10px;
+      margin: 0 auto;
+    }
+
+    .horiz-center-wrapper {
+				min-height: 100px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+
+	.align-to-left {
+		float: left;
+		display: block;
+	}
+
+	.align-to-right {
+		float: right;
+		display: block;
+	}
+
+	.value {
+		.img-wrapper {
+			position: relative;
+			display: block;
+
+			img {
+				display: block;
+				padding: 5px;
+				border: 1px solid $cYellow;
+                max-width: 320px;
+
+			}
+
+			
+		}
+
+		.img-wrapper.align-to-left {
+			&::after {
+				@include triangleRight(10px, $cYellow);
+				right: -10px;
+				left: auto;
+				top: 101px;
+			}
+		}
+
+		.img-wrapper.align-to-right {
+			&::after {
+				@include triangleLeft(10px, $cYellow);
+				left: -10px;
+				right: auto;
+				top: 101px;
+			}
+		}
+
+		p {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		img.wave {
+			display: block;
+			margin: 10px auto;
+			width: 40px;
+
+			border: none;
+			padding: 0;	
+		}
+
+	}
+
+}
+
+#zalety {
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center bottom;
+}
+
+
+@media screen and (max-width: 550px) {
+	#apartament {
+		.align-to-left,
+		.align-to-right
+		 {
+			float: none;
+			img {
+				display: block;
+				margin: auto auto;
+			}
+		}
+
+		.value {
+			p {
+				font-size: 14px !important;
+			}
+			img {
+				width: 60%;
+			}
+		}		
+	}
+}
+
+	 @media screen and (max-width: 767px) {
+
+    .asset {
+    	margin-top: 10px !important;
+    	border-bottom: 2px solid #FFC914 !important;
+    	width: 80%;
+			margin: 0 auto;
+			
+			.horiz-center-wrapper {
+				min-height: 50px !important;
+    	}
+    	h3 {
+    		min-height: auto !important;
+    		margin-top: 0px !important;
+    	}
+
+    	p {
+    		margin-bottom: 0px;
+    	}
+
+    }
+}

@@ -1,0 +1,127 @@
+#erla-calendar {
+	min-height: 430px;
+
+	.calendar-header {
+		padding: 40px 10px;
+		text-align: center;
+		background-color: #008CBA;
+		color: white;
+
+		font-size: 18px;
+		letter-spacing: 3px;
+		position: relative;
+		.month {
+			text-transform: uppercase;
+			position: relative;
+		}
+
+		.year {
+			position: relative;
+		}
+
+		i {
+			color: #fff;
+		}
+
+	}
+
+
+	th {
+			text-align: center;
+		}
+
+		td {
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #eee;
+		}
+
+	.fa {
+		position: absolute;
+		cursor: pointer;
+		
+		top: 50px;
+		padding: 5px;
+		transition: all 0.3s;
+	}
+
+	.fa-angle-right {
+		right: 20px;
+		padding-left: 20px;
+		text-align: right;
+		&:hover {
+			right: 15px;
+		}
+	}
+
+	.fa-angle-left {
+		left: 20px;
+		padding-right: 20px;
+		text-align: left;
+		&:hover {
+			left: 15px;
+		}
+	}
+
+	.rented {
+		background-color: $cBlue;
+		color: #eee;
+		text-decoration: line-through;
+	}
+
+}
+
+	.sample {
+		width: 85px;
+		background-color: $cBlue;
+		color: #eee;
+		text-align: center;
+		padding: 10px 1px;
+		display: inline-block;
+		text-decoration: line-through;
+		margin-bottom: 20px;
+	}
+
+hr {
+		border-top: 1px solid $cYellow;
+	}
+
+
+
+#dostepnosc	.info-box .row {
+	
+		padding-top: 10px;
+	}
+
+#dostepnosc .info-box {
+	margin-top: 50px;
+	p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#dostepnosc .info-box {
+		p {
+			font-size: 14px;
+		}
+	}
+
+	#erla-calendar {
+		min-height: auto;
+		
+		td, th {
+			font-size: 12px;
+			padding: 5px;
+		}
+
+		.calendar-header {
+			padding: 20px 10px;
+		}
+
+		.month, .year {
+			font-size: 16px;
+		}
+	}
+	
+}

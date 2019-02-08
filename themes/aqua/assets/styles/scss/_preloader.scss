@@ -1,0 +1,31 @@
+.preload-active {
+	overflow: hidden;
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #333;
+	z-index: 1001;
+
+	.static-logo {
+		position: absolute;
+		background-color: transparent;
+		text-align: center;
+		bottom: 60%;
+	}
+
+	i {
+		display: block;
+  	position: fixed;
+  	text-align: center;
+  	width: 100%;
+  	top: 40%;
+	}
+	.fa {
+			color: $cBlue;
+		}
+}

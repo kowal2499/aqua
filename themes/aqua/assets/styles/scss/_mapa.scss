@@ -1,0 +1,23 @@
+#mapa {
+	padding-bottom: 10px;
+	
+	.signpost {
+		margin: 5px;
+		margin-top: 10px;
+		padding-left: 8px;
+
+		display: inline-block;
+		background-color: $cBlue;
+		border: 1px solid $cBlue;
+		color: $cWhite;
+
+		.distance {
+			display: inline-block;
+			background-color: $cWhite;
+			color: #777;
+			padding-left: 8px;
+			padding-right: 10px;
+			margin-left: 10px;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+footer {
+	padding: 10px;
+}
+
+.fb-page {
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+	.address  {
+		p {
+			font-size: 20px !important;
+    	line-height: 25px !important;
+		}
+	}
+}
