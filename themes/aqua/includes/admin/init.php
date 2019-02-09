@@ -5,7 +5,7 @@ function aqua_admin_enqueue() {
 	if (!isset($_GET['page']) || $_GET['page'] != 'aqua_theme_options') {
 		return;
 	}
-	wp_register_style('aqua_bootstrap', get_template_directory_uri() . '/assets/styles/bootstrap.min.css');
+	wp_register_style('aqua_bootstrap', get_template_directory_uri() . '/node_modules/bootstrap3/dist/css/bootstrap.min.css');
 	wp_register_style('aqua_admin-style', get_template_directory_uri() . '/assets/styles/admin.css');
 	wp_register_style('aqua_fonts-awesome', get_template_directory_uri() . '/assets/vendor/fontawesome/css/font-awesome.min.css');
 
@@ -15,7 +15,7 @@ function aqua_admin_enqueue() {
 
 	wp_register_script('aqua_options', get_template_directory_uri() . '/assets/scripts/admin-options.js', array(), false, true);
 	wp_register_script('aqua_mappointers', get_template_directory_uri() . '/assets/scripts/admin-mappointers.js', array(), false, true);
-	wp_register_script('aqua_bootstrap', get_template_directory_uri() . '/assets/scripts/bootstrap.min.js', array(), false, true);
+	wp_register_script('aqua_bootstrap', get_template_directory_uri() . '/node_modules/bootstrap3/dist/js/bootstrap.min.js', array(), false, true);
 	
 	wp_enqueue_media();
 	wp_enqueue_script('aqua_options');
