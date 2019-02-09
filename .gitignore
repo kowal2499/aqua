@@ -16,7 +16,6 @@ themes/*
 
 !themes/aqua
 
-themes/aqua/assets/build
 themes/aqua/assets/download
 themes/aqua/assets/styles/.sass-cache
 themes/aqua/assets/styles/.sass-cache
